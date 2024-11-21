@@ -162,154 +162,153 @@
     <div class="videos-grid" id="solitaryVideosGrid"></div>      
 
     <script>
-
 const visualVideos = [
     {
         id: '1',
-        title: 'JavaScript for Beginners - Learn JavaScript Programming',
-        description: 'Get started with JavaScript programming in this comprehensive guide for beginners.',
-        url: 'https://www.youtube.com/playlist?list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW',
-        thumbnail: "jsv.png",
+        title: 'Rust for Beginners - Learn Rust Programming',
+        description: 'Get started with Rust programming in this comprehensive guide for beginners.',
+        url: 'https://www.youtube.com/playlist?list=PLai5B987bZ9CoVR-QEIN9foz4QCJ0H2Y8',
+        thumbnail: "rtv.png",
         difficulty: 'full course',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '2',
-        title: 'JavaScript Full Course - Learn JavaScript in 12 Hours',
-        description: 'A detailed JavaScript programming course designed for beginners to master JavaScript basics.',
-        url: 'https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR',
-        thumbnail: "jsv.png",
+        title: 'Rust Full Course - Learn Rust in 12 Hours',
+        description: 'A detailed Rust programming course designed for beginners to master Rust basics.',
+        url: 'https://www.youtube.com/playlist?list=PLinedj3B30sA_M0oxCRgFzPzEMX3CSfT5',
+        thumbnail: "rtv.png",
         difficulty: 'full course',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '3',
-        title: 'JavaScript Tutorial - JavaScript for Beginners',
-        description: 'An introductory course covering essential JavaScript programming concepts.',
-        url: 'https://www.youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37',
-        thumbnail: "jsv.png",
+        title: 'Rust Tutorial - Rust for Beginners',
+        description: 'An introductory course covering essential Rust programming concepts.',
+        url: 'https://www.youtube.com/playlist?list=PLzMcBGfZo4-nyLTlSRBvo0zjSnCnqjHYQ',
+        thumbnail: "rtv.png",
         difficulty: 'full course',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     }
 ];
 
 const auditoryVideos = [
     {
         id: '1',
-        title: 'Audio Lecture: JavaScript Programming Basics',
-        description: 'An in-depth audio lecture covering JavaScript programming fundamentals for auditory learners.',
-        url: 'https://www.youtube.com/playlist?list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4',
-        thumbnail: "jsa.png",
+        title: 'Audio Lecture: Rust Programming Basics',
+        description: 'An in-depth audio lecture covering Rust programming fundamentals for auditory learners.',
+        url: 'https://www.youtube.com/playlist?list=PLOY5k46NyxirlL6Pk3Py6_5SL1EIdXg5c',
+        thumbnail: "rta.png",
         difficulty: 'audio guide',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '2',
-        title: 'Podcast: Essential JavaScript Programming Concepts',
-        description: 'A podcast that discusses key concepts in JavaScript programming for listening comprehension.',
-        url: 'https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP',
-        thumbnail: "jsa.png",
+        title: 'Podcast: Essential Rust Programming Concepts',
+        description: 'A podcast that discusses key concepts in Rust programming for listening comprehension.',
+        url: 'https://www.youtube.com/playlist?list=PLbBJseQLp5KB4i45TT-w4M3sgqecgDCOq',
+        thumbnail: "rta.png",
         difficulty: 'podcast',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '3',
-        title: 'Lecture Audio: Advanced JavaScript Techniques Explained',
-        description: 'An advanced lecture on JavaScript programming techniques, formatted as an auditory experience.',
-        url: 'https://www.youtube.com/playlist?list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf',
-        thumbnail: "jsa.png",
+        title: 'Lecture Audio: Advanced Rust Techniques Explained',
+        description: 'An advanced lecture on Rust programming techniques, formatted as an auditory experience.',
+        url: 'https://www.youtube.com/watch?v=zF34dRivLOw&pp=ygUicnVzdCBwcm9ncmFtbWluZyBsYW5ndWFnZSBwbGF5bGlzdA%3D%3D',
+        thumbnail: "rta.png",
         difficulty: 'lecture',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     }
 ];
 
 const readVideos = [
     {
         id: '1',
-        title: 'Step-by-Step Guide to JavaScript Programming',
-        description: 'A comprehensive JavaScript programming guide that includes code walkthroughs and written annotations.',
-        url: 'https://www.youtube.com/playlist?list=PLfEr2kn3s-bo4LwlbyZugHPavhcdW8YMC',
-        thumbnail: "jsr.jpg",
+        title: 'Step-by-Step Guide to Rust Programming',
+        description: 'A comprehensive Rust programming guide that includes code walkthroughs and written annotations.',
+        url: 'https://www.youtube.com/playlist?list=PLVvjrrRCBy2JSHf9tGxGKJ-bYAN_uDCUL',
+        thumbnail: "rtr.png",
         difficulty: 'text-based guide',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '2',
-        title: 'In-Depth JavaScript Programming Concepts',
-        description: 'Focuses on written explanations and coding exercises for each JavaScript programming concept.',
-        url: 'https://www.youtube.com/playlist?list=PLqleLpAMfxGCEFTKIhBmA12JAp5mJtqxi',
-        thumbnail: "jsr.jpg",
+        title: 'In-Depth Rust Programming Concepts',
+        description: 'Focuses on written explanations and coding exercises for each Rust programming concept.',
+        url: 'https://www.youtube.com/playlist?list=PLndmg9UIKNomnnSxd__VKkUX4zT1YpSoY',
+        thumbnail: "rtr.png",
         difficulty: 'text & code examples',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '3',
-        title: 'Comprehensive JavaScript Tutorial for Beginners',
-        description: 'A detailed JavaScript tutorial with written explanations of key concepts and coding techniques.',
-        url: 'https://www.youtube.com/playlist?list=PLwmDa-QvqlfhgTB-56qvv1iFa33blmN4z',
-        thumbnail: "jsr.jpg",
+        title: 'Comprehensive Rust Tutorial for Beginners',
+        description: 'A detailed Rust tutorial with written explanations of key concepts and coding techniques.',
+        url: 'https://www.youtube.com/playlist?list=PLDbRgZ0OOEpUkWDGqp91ODn0dk7LPBAUL',
+        thumbnail: "rtr.png",
         difficulty: 'text-based tutorial',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     }
 ];
 
 const logicalVideos = [
     {
         id: '1',
-        title: 'Mastering JavaScript Programming Logic',
-        description: 'A logical breakdown of JavaScript programming concepts and how they work together.',
-        url: 'https://www.youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv',
-        thumbnail: "jsl.png",
+        title: 'Mastering Rust Programming Logic',
+        description: 'A logical breakdown of Rust programming concepts and how they work together.',
+        url: 'https://www.youtube.com/playlist?list=PLPoSdR46FgI412aItyJhj2bF66cudB6Qs',
+        thumbnail: "rtl.jpg",
         difficulty: 'conceptual guide',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '2',
-        title: 'JavaScript Programming Logic Explained',
-        description: 'Understand the logical structure and flow of JavaScript programming with real-life examples.',
-        url: 'https://www.youtube.com/playlist?list=PLqkLaKB2GJhWXV9rcarwvn06ISlL_9mPQ',
-        thumbnail: "jsl.png",
+        title: 'Rust Programming Logic Explained',
+        description: 'Understand the logical structure and flow of Rust programming with real-life examples.',
+        url: 'https://www.youtube.com/watch?v=BpPEoZW5IiY&pp=ygUicnVzdCBwcm9ncmFtbWluZyBsYW5ndWFnZSBwbGF5bGlzdA%3D%3D',
+        thumbnail: "rtl.jpg",
         difficulty: 'logically structured',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '3',
-        title: 'Decoding JavaScript Programming Logic',
-        description: 'An in-depth explanation of JavaScript programming through logical examples and exercises.',
-        url: 'https://www.youtube.com/playlist?list=PLqleLpAMfxGCcUpg6kOLnqbSDiWrbxSIL',
-        thumbnail: "jsl.png",
+        title: 'Decoding Rust Programming Logic',
+        description: 'An in-depth explanation of Rust programming through logical examples and exercises.',
+        url: 'https://www.youtube.com/watch?v=xzSMXHdYOns&list=PL8fnAiiuQeFsss4xdjXyHJ4fT4_w10s3J',
+        thumbnail: "rtl.jpg",
         difficulty: 'concept-focused',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     }
 ];
 
 const solitaryVideos = [
     {
         id: '1',
-        title: 'JavaScript Programming: Learn at Your Own Pace',
-        description: 'A solitary video for self-paced learning of JavaScript programming basics and advanced techniques.',
-        url: 'https://www.youtube.com/playlist?list=PLZPZq0r_RZOMRMjHB_IEBjOW_ufr00yG1',
-        thumbnail: "jss.png",
+        title: 'Rust Programming: Learn at Your Own Pace',
+        description: 'A solitary video for self-paced learning of Rust programming basics and advanced techniques.',
+        url: 'https://www.youtube.com/watch?v=zCtROMfofw4&list=PLRuqvIc0eAmp8Lv6M4BKQWEinvCuqdVFP',
+        thumbnail: "rts.jpg",
         difficulty: 'self-paced guide',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '2',
-        title: 'Learn JavaScript Alone: No Distractions',
-        description: 'A solitary study session to focus on learning JavaScript independently without external interruptions.',
-        url: 'https://www.youtube.com/playlist?list=PLmGElG-9wxc88RWfA-xW0aPldFYLBuCF9',
-        thumbnail: "jss.png",
+        title: 'Learn Rust Alone: No Distractions',
+        description: 'A solitary study session to focus on learning Rust independently without external interruptions.',
+        url: 'https://www.youtube.com/watch?v=qP7LzZqGh30&pp=ygUicnVzdCBwcm9ncmFtbWluZyBsYW5ndWFnZSBwbGF5bGlzdA%3D%3D',
+        thumbnail: "rts.jpg",
         difficulty: 'no distractions',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     },
     {
         id: '3',
-        title: 'Complete JavaScript Programming Course',
-        description: 'A fully solitary JavaScript programming course for deep and focused learning.',
-        url: 'https://www.youtube.com/playlist?list=PL724pdDXl9Q2QKZYWweqT3zWUtWRKQS5Q',
-        thumbnail: "jss.png",
+        title: 'Complete Rust Programming Course',
+        description: 'A fully solitary Rust programming course for deep and focused learning.',
+        url: 'https://www.youtube.com/watch?v=-lYeJeQ11OI&list=PLfllocyHVgsRwLkTAhG0E-2QxCf-ozBkk',
+        thumbnail: "rts.jpg",
         difficulty: 'full course',
-        topic: 'JavaScript Programming'
+        topic: 'Rust Programming'
     }
 ];
 

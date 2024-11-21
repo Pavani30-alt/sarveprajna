@@ -162,154 +162,108 @@
     <div class="videos-grid" id="solitaryVideosGrid"></div>      
 
     <script>
-
 const visualVideos = [
     {
         id: '1',
-        title: 'JavaScript for Beginners - Learn JavaScript Programming',
-        description: 'Get started with JavaScript programming in this comprehensive guide for beginners.',
-        url: 'https://www.youtube.com/playlist?list=PLGjplNEQ1it_oTvuLRNqXfz_v_0pq6unW',
-        thumbnail: "jsv.png",
+        title: 'SQL for Beginners - Learn SQL Programming',
+        description: 'Get started with SQL programming in this comprehensive guide for beginners.',
+        url: 'https://www.youtube.com/playlist?list=PLdOKnrf8EcP17p05q13WXbHO5Z_JfXNpw',
+        thumbnail: "sqv.png",
         difficulty: 'full course',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     },
     {
         id: '2',
-        title: 'JavaScript Full Course - Learn JavaScript in 12 Hours',
-        description: 'A detailed JavaScript programming course designed for beginners to master JavaScript basics.',
-        url: 'https://www.youtube.com/playlist?list=PLu0W_9lII9ahR1blWXxgSlL4y9iQBnLpR',
-        thumbnail: "jsv.png",
+        title: 'SQL Full Course - Learn SQL in 12 Hours',
+        description: 'A detailed SQL programming course designed for beginners to master SQL basics.',
+        url: 'https://www.youtube.com/playlist?list=PLavw5C92dz9Ef4E-1Zi9KfCTXS_IN8gXZ',
+        thumbnail: "sqv.png",
         difficulty: 'full course',
-        topic: 'JavaScript Programming'
-    },
-    {
-        id: '3',
-        title: 'JavaScript Tutorial - JavaScript for Beginners',
-        description: 'An introductory course covering essential JavaScript programming concepts.',
-        url: 'https://www.youtube.com/playlist?list=PLu71SKxNbfoBuX3f4EOACle2y-tRC5Q37',
-        thumbnail: "jsv.png",
-        difficulty: 'full course',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     }
 ];
 
 const auditoryVideos = [
     {
         id: '1',
-        title: 'Audio Lecture: JavaScript Programming Basics',
-        description: 'An in-depth audio lecture covering JavaScript programming fundamentals for auditory learners.',
-        url: 'https://www.youtube.com/playlist?list=PLsyeobzWxl7rrvgG7MLNIMSTzVCDZZcT4',
-        thumbnail: "jsa.png",
+        title: 'Audio Lecture: SQL Programming Basics',
+        description: 'An in-depth audio lecture covering SQL programming fundamentals for auditory learners.',
+        url: 'https://www.youtube.com/playlist?list=PLsjUcU8CQXGFFAhJI6qTA8owv3z9jBbpd',
+        thumbnail: "sqa.jpg",
         difficulty: 'audio guide',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     },
     {
         id: '2',
-        title: 'Podcast: Essential JavaScript Programming Concepts',
-        description: 'A podcast that discusses key concepts in JavaScript programming for listening comprehension.',
-        url: 'https://www.youtube.com/playlist?list=PLlasXeu85E9cQ32gLCvAvr9vNaUccPVNP',
-        thumbnail: "jsa.png",
+        title: 'Podcast: Essential SQL Programming Concepts',
+        description: 'A podcast that discusses key concepts in SQL programming for listening comprehension.',
+        url: 'https://www.youtube.com/playlist?list=PLxCzCOWd7aiHqU4HKL7-SITyuSIcD93id',
+        thumbnail: "sqa.jpg",
         difficulty: 'podcast',
-        topic: 'JavaScript Programming'
-    },
-    {
-        id: '3',
-        title: 'Lecture Audio: Advanced JavaScript Techniques Explained',
-        description: 'An advanced lecture on JavaScript programming techniques, formatted as an auditory experience.',
-        url: 'https://www.youtube.com/playlist?list=PL0b6OzIxLPbx-BZTaWu_AF7hsKo_Fvsnf',
-        thumbnail: "jsa.png",
-        difficulty: 'lecture',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     }
 ];
 
 const readVideos = [
     {
         id: '1',
-        title: 'Step-by-Step Guide to JavaScript Programming',
-        description: 'A comprehensive JavaScript programming guide that includes code walkthroughs and written annotations.',
-        url: 'https://www.youtube.com/playlist?list=PLfEr2kn3s-bo4LwlbyZugHPavhcdW8YMC',
-        thumbnail: "jsr.jpg",
+        title: 'Step-by-Step Guide to SQL Programming',
+        description: 'A comprehensive SQL programming guide that includes code walkthroughs and written annotations.',
+        url: 'https://www.youtube.com/playlist?list=PLqleLpAMfxGDslJolGldBWcdT1FSIhJ1L',
+        thumbnail: "sqr.png",
         difficulty: 'text-based guide',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     },
     {
         id: '2',
-        title: 'In-Depth JavaScript Programming Concepts',
-        description: 'Focuses on written explanations and coding exercises for each JavaScript programming concept.',
-        url: 'https://www.youtube.com/playlist?list=PLqleLpAMfxGCEFTKIhBmA12JAp5mJtqxi',
-        thumbnail: "jsr.jpg",
+        title: 'In-Depth SQL Programming Concepts',
+        description: 'Focuses on written explanations and coding exercises for each SQL programming concept.',
+        url: 'https://www.youtube.com/playlist?list=PL9ooVrP1hQOG6DQnOD6ujdCEchaqADfCU',
+        thumbnail: "sqr.png",
         difficulty: 'text & code examples',
-        topic: 'JavaScript Programming'
-    },
-    {
-        id: '3',
-        title: 'Comprehensive JavaScript Tutorial for Beginners',
-        description: 'A detailed JavaScript tutorial with written explanations of key concepts and coding techniques.',
-        url: 'https://www.youtube.com/playlist?list=PLwmDa-QvqlfhgTB-56qvv1iFa33blmN4z',
-        thumbnail: "jsr.jpg",
-        difficulty: 'text-based tutorial',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     }
 ];
 
 const logicalVideos = [
     {
         id: '1',
-        title: 'Mastering JavaScript Programming Logic',
-        description: 'A logical breakdown of JavaScript programming concepts and how they work together.',
-        url: 'https://www.youtube.com/playlist?list=PLZPZq0r_RZOO1zkgO4bIdfuLpizCeHYKv',
-        thumbnail: "jsl.png",
+        title: 'Mastering SQL Programming Logic',
+        description: 'A logical breakdown of SQL programming concepts and how they work together.',
+        url: 'https://www.youtube.com/playlist?list=PLxCzCOWd7aiFbom4rYyl5qROgqYuCuAPD',
+        thumbnail: "sqll.jpg",
         difficulty: 'conceptual guide',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     },
     {
         id: '2',
-        title: 'JavaScript Programming Logic Explained',
-        description: 'Understand the logical structure and flow of JavaScript programming with real-life examples.',
-        url: 'https://www.youtube.com/playlist?list=PLqkLaKB2GJhWXV9rcarwvn06ISlL_9mPQ',
-        thumbnail: "jsl.png",
+        title: 'SQL Programming Logic Explained',
+        description: 'Understand the logical structure and flow of SQL programming with real-life examples.',
+        url: 'https://www.youtube.com/watch?v=hlGoQC332VM&pp=ygUhc3FsIHByb2dyYW1taW5nIGxhbmd1YWdlIHBsYXlsaXN0',
+        thumbnail: "sqll.jpg",
         difficulty: 'logically structured',
-        topic: 'JavaScript Programming'
-    },
-    {
-        id: '3',
-        title: 'Decoding JavaScript Programming Logic',
-        description: 'An in-depth explanation of JavaScript programming through logical examples and exercises.',
-        url: 'https://www.youtube.com/playlist?list=PLqleLpAMfxGCcUpg6kOLnqbSDiWrbxSIL',
-        thumbnail: "jsl.png",
-        difficulty: 'concept-focused',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     }
 ];
 
 const solitaryVideos = [
     {
         id: '1',
-        title: 'JavaScript Programming: Learn at Your Own Pace',
-        description: 'A solitary video for self-paced learning of JavaScript programming basics and advanced techniques.',
-        url: 'https://www.youtube.com/playlist?list=PLZPZq0r_RZOMRMjHB_IEBjOW_ufr00yG1',
-        thumbnail: "jss.png",
+        title: 'SQL Programming: Learn at Your Own Pace',
+        description: 'A solitary video for self-paced learning of SQL programming basics and advanced techniques.',
+        url: 'https://www.youtube.com/playlist?list=PL08903FB7ACA1C2FB',
+        thumbnail: "sqs.png",
         difficulty: 'self-paced guide',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     },
     {
         id: '2',
-        title: 'Learn JavaScript Alone: No Distractions',
-        description: 'A solitary study session to focus on learning JavaScript independently without external interruptions.',
-        url: 'https://www.youtube.com/playlist?list=PLmGElG-9wxc88RWfA-xW0aPldFYLBuCF9',
-        thumbnail: "jss.png",
+        title: 'Learn SQL Alone: No Distractions',
+        description: 'A solitary study session to focus on learning SQL independently without external interruptions.',
+        url: 'https://www.youtube.com/playlist?list=PLL_LQvNX4xKyiExzq9GKwORoH6nvaRnOQ',
+        thumbnail: "sqs.png",
         difficulty: 'no distractions',
-        topic: 'JavaScript Programming'
-    },
-    {
-        id: '3',
-        title: 'Complete JavaScript Programming Course',
-        description: 'A fully solitary JavaScript programming course for deep and focused learning.',
-        url: 'https://www.youtube.com/playlist?list=PL724pdDXl9Q2QKZYWweqT3zWUtWRKQS5Q',
-        thumbnail: "jss.png",
-        difficulty: 'full course',
-        topic: 'JavaScript Programming'
+        topic: 'SQL Programming'
     }
 ];
 
