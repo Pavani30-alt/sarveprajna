@@ -11,117 +11,167 @@
    
 </head>
 <style>
-    body {
-    background-image: url('background.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin: 0;
-    height: 100vh;
-    width: 100vw;
-    background-color: rgba(245, 245, 245, 0.8);
-    background-blend-mode: lighten;
-}
+           body {
+            background-image: url('F:/background.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(245, 245, 245, 0.8);
+            background-blend-mode: lighten;
+        }
 
-.logo-container {
-    position: absolute;
-    top: -4px;
-    left: -5px;
-}
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
 
-.logo {
-    width: 115px;
-    height: 115px;
-    border-radius: 50%;
-    object-fit: cover;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    margin-right: 15px;
-}
+        .logo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+        }
 
-.header {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-}
+        .header {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
 
-.website-name h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 4.5rem;
-    color: #0077b6;
-    margin: 0;
-    padding-left: 100px;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
+        .website-name h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 3rem;
+            color: #0077b6;
+            margin: 0;
+            padding-left: 120px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
 
-.info-box {
-    margin-top: 170px;
-    margin-left: 175px;
-    width: 919px;
-    padding: 35px 15px;
-    background-color: rgba(139, 190, 211, 0.95);
-    border-radius: 20px;
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
-    font-family: 'Arial', sans-serif;
-    color: #333;
-    line-height: 1.6;
-    height: 220px;
-}
+        .info-box {
+            margin-top: 150px;
+            margin-left: 10%;
+            width: 80%;
+            padding: 20px;
+            background-color: rgba(139, 190, 211, 0.95);
+            border-radius: 20px;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+            font-family: 'Arial', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
 
-p {
-    color: #000000;
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-}
+        p {
+            color: #000000;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
 
-.box {
-    margin-top: 46px;
-    margin-left: 55px;
-    width: 1128px;
-    padding: 35px 15px;
-    background-color: #0077b6;
-    border-radius: 20px;
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
-    font-family: 'Arial', sans-serif;
-    color: #010101;
-    line-height: 1.6;
-    height: 45px;
-}
+        .box {
+            margin-top: 30px;
+            margin-left: 10%;
+            width: 80%;
+            padding: 20px;
+            background-color: #0077b6;
+            border-radius: 20px;
+            box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.15);
+            font-family: 'Arial', sans-serif;
+            color: #010101;
+            line-height: 1.6;
+        }
 
-p1 {
-    color: #000000;
-    font-size: 1.2rem;
-    letter-spacing: 0.5px;
-}
+        p1 {
+            color: #ffffff;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
 
-.arrow {
-    color: #090a0b;
-    font-size: 1.0rem;
-    animation: moveArrow 1.0s infinite;
-    display: inline-block;
-    margin-right: 5px;
-}
+        .arrow {
+            color: #fff;
+            font-size: 1.2rem;
+            animation: moveArrow 1.0s infinite;
+            display: inline-block;
+            margin-right: 5px;
+        }
 
-@keyframes moveArrow {
-    0% {
-        transform: translateX(0);
-    }
-    50% {
-        transform: translateX(10px);
-    }
-    100% {
-        transform: translateX(0);
-    }
-}
+        @keyframes moveArrow {
+            0% {
+                transform: translateX(0);
+            }
+            50% {
+                transform: translateX(10px);
+            }
+            100% {
+                transform: translateX(0);
+            }
+        }
 
-.link {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+        .link {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .logo {
+                width: 80px;
+                height: 80px;
+            }
+
+            .website-name h1 {
+                font-size: 2.5rem;
+                padding-left: 100px;
+            }
+
+            .info-box {
+                margin-left: 5%;
+                width: 90%;
+            }
+
+            .box {
+                margin-left: 5%;
+                width: 90%;
+            }
+
+            p, p1 {
+                font-size: 0.9rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                width: 60px;
+                height: 60px;
+            }
+
+            .website-name h1 {
+                font-size: 2rem;
+                padding-left: 80px;
+            }
+
+            .info-box {
+                margin-top: 120px;
+                padding: 15px;
+            }
+
+            .box {
+                margin-top: 20px;
+                padding: 15px;
+            }
+
+            p, p1 {
+                font-size: 0.8rem;
+            }
+        }
 
 </style>
 <body>
